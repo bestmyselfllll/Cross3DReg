@@ -9,7 +9,7 @@ Cross-source point cloud registration, which aims to align point cloud data from
 ![](assets/frame.PNG)
 
 
-## Cross3D
+## Cross3DReg Dataset
 To facilitate the development of cross-source point cloud registration, we introduce a large-scale real-world Cross3DReg dataset that contains $13,231$ point cloud pairs captured by a rotating mechanical LiDAR and a hybrid semi-solid-state LiDAR. Images are also collected when the calibration between the RGB camera and the Lidars is unavailable. The data acquisition platform is a custom-built Unmanned Ground Vehicle (UGV), equipped with a 64-beam spinning mechanical LiDAR, a hybrid solid-state LiDAR, and an RGB camera. Specifically, the source point clouds are captured by the hybrid semi-solid-state LiDAR, while the target point clouds are acquired by the rotating mechanical LiDAR. The RGB camera captures front-view images of the scene to provide auxiliary visual information.
 The Cross3D dataset can be downloaded from the [Cross3D](https://drive.google.com/file/d/1sEvQQYLJz7reggiM08GXg2Zatck2GLft/view?usp=sharing). The partial data visualization results are shown as follows:
 ![](assets/visual.png)
