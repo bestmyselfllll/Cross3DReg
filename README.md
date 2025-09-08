@@ -28,5 +28,5 @@ python setup.py build develop
 Code has been tested with Ubuntu 20.04, GCC 9.3.0, Python 3.8, PyTorch 1.7.1, CUDA 11.1 and cuDNN 8.1.0.
 
 ## Cross3D
-The Cross3D dataset can be downloaded from the [Cross3D](). The partial data visualization results are shown as follow:
+The Cross3D dataset can be downloaded from the [Cross3D](https://drive.google.com/file/d/1sEvQQYLJz7reggiM08GXg2Zatck2GLft/view?usp=sharing). The partial data visualization results are shown as follow:
 ![](assets/visual.png)
