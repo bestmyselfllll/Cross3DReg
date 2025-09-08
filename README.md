@@ -49,6 +49,12 @@ CUDA_VISIBLE_DEVICES=0 python test.py --snapshot=../../path/to/pretrained/weight
 CUDA_VISIBLE_DEVICES=0 python eval.py --benchmark=3DMatch --method=lgr
 ```
 
+## Result
+We evaluate Cross3D on the Cross3D dataset as in [Geotransformer](https://arxiv.org/abs/2202.06688)
+
+| Benchmark |  RRE  |  RTE  |  RR   |
+| :-------- | :---: | :---: | :---: |
+| Cross3D  | 6.683 |  1.010  | 87.2  |
 
 ## Acknowledgements
 - [PREDATOR](https://github.com/prs-eth/OverlapPredator)
