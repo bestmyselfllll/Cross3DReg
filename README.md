@@ -31,3 +31,26 @@ Code has been tested with Ubuntu 20.04, GCC 9.3.0, Python 3.8, PyTorch 1.7.1, CU
 To facilitate the development of cross-source point cloud registration, we introduce a large-scale real-world Cross3DReg dataset that contains $13,231$ point cloud pairs captured by a rotating mechanical LiDAR and a hybrid semi-solid-state LiDAR. Images are also collected when the calibration between the RGB camera and the Lidars is unavailable. The data acquisition platform is a custom-built Unmanned Ground Vehicle (UGV), equipped with a 64-beam spinning mechanical LiDAR, a hybrid solid-state LiDAR, and an RGB camera. Specifically, the source point clouds are captured by the hybrid semi-solid-state LiDAR, while the target point clouds are acquired by the rotating mechanical LiDAR. The RGB camera captures front-view images of the scene to provide auxiliary visual information.
 The Cross3D dataset can be downloaded from the [Cross3D](https://drive.google.com/file/d/1sEvQQYLJz7reggiM08GXg2Zatck2GLft/view?usp=sharing). The partial data visualization results are shown as follows:
 ![](assets/visual.png)
+
+### Training
+
+The code for 3DMatch is in `experiments/geotransformer.3dmatch.stage4.gse.k3.max.oacl.stage2.sinkhorn`. Use the following command for training.
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python trainval.py
+```
+
+### Testing
+
+We  provide the pretrained weights in `weights`, use the following command to test the pretrained weights.
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python test.py --snapshot=../../path/to/pretrained/weight
+CUDA_VISIBLE_DEVICES=0 python eval.py --benchmark=3DMatch --method=lgr
+```
+
+
+## Acknowledgements
+- [PREDATOR](https://github.com/prs-eth/OverlapPredator)
+- [Geotransformer](https://github.com/qinzheng93/GeoTransformer)
+
