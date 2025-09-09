@@ -36,7 +36,7 @@ If you find the code or dataset useful for your research, please use the followi
       archivePrefix={arXiv},
       url={https://arxiv.org/abs/2509.06456}, 
 }
-
+```
 ## Acknowledgements
 - [PREDATOR](https://github.com/prs-eth/OverlapPredator)
 - [Geotransformer](https://github.com/qinzheng93/GeoTransformer)
