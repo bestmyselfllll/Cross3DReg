@@ -25,6 +25,18 @@ We evaluate Cross3D on the Cross3D dataset as in [Geotransformer](https://arxiv.
 | :-------- | :---: | :---: | :---: |
 | Cross3D  | 6.683 |  1.010  | 87.2  |
 
+## Citation
+If you find the code or dataset useful for your research, please use the following BibTex entry.
+```
+@artical{xu2025cross3dreg,
+      title={Cross3DReg: Towards a Large-scale Real-world Cross-source Point Cloud Registration Benchmark}, 
+      author={Zongyi Xu and Zhongpeng Lang and Yilong Chen and Shanshan Zhao and Xiaoshui Huang and Yifan Zuo and Yan Zhang and Qianni Zhang and Xinbo Gao},
+      year={2025},
+      eprint={2509.06456},
+      archivePrefix={arXiv},
+      url={https://arxiv.org/abs/2509.06456}, 
+}
+
 ## Acknowledgements
 - [PREDATOR](https://github.com/prs-eth/OverlapPredator)
 - [Geotransformer](https://github.com/qinzheng93/GeoTransformer)
